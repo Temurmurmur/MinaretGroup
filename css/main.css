@@ -399,7 +399,7 @@ template {
   align-items: center; }
 
 .top-banner {
-  background: url("../../img/main/banner4.jpg") center no-repeat;
+  background: url("../img/main/banner4.jpg") center no-repeat;
   background-size: cover;
   height: 600px; }
   .top-banner h1 {
