@@ -73,3 +73,32 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.top-banner {
+  background: url("/img/main/banner4.jpg")center no-repeat;
+  background-size: cover;
+  height: 600px;
+
+  h1 {
+    font-family: Caveat;
+    font-size: 80px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 26px;
+    color: #fff;
+  }
+}
+
+.top-banner__cover {
+  background: rgba(0, 0, 0, 0.6901960784313725);
+  height: 100%;
+}
+
+body {
+  height: 2000px;
+}
