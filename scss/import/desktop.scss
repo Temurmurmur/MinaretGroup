@@ -1,0 +1,75 @@
+// .caveat {
+//   font-family: Caveat;
+//   font-size: 30px;
+//   margin-bottom: 30px;
+//   font-weight: bold;
+// }
+
+.top-menu {
+  height: 80px;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 25px rgba(0,0,0,0.5);
+  background: #fff;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    width: 70%;
+    margin: 0;
+  }
+
+  &__item {
+    list-style: none;
+
+    a {
+      font-weight: 600;
+      font-size: 18px;
+      color: #000;
+      transition: all 0.8s;
+      padding: 5px;
+      border-radius: 5px;
+
+      &:hover {
+        text-decoration: none;
+        background: #faf0d2;
+        transition: all 1s;
+      }
+    }
+  }
+
+  &__call {
+    display: block;
+
+    img {
+      transform: rotate(145deg);
+      transition: all 1s;
+
+      &:hover {
+        transform: rotate(165deg);
+        transition: all 1s;
+      }
+    }
+  }
+}
+
+.logo {
+  display: block;
+  height: 100%;
+  width: 100px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.top-menu__nav-wrap {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
