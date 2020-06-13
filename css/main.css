@@ -299,6 +299,7 @@ template {
 
 /**
  * Add the correct display in IE 10.
+<<<<<<< HEAD
  */
 [hidden] {
   display: none; }
@@ -559,3 +560,125 @@ template {
   100% {
     transform: scale(0.9);
     opacity: 0.7; } }
+=======
+ */
+[hidden] {
+  display: none; }
+
+@font-face {
+  font-family: 'Caveat';
+  src: url("../fonts/Caveat/Caveat-Regular.ttf");
+  src: url("../fonts/Caveat/Caveat-Regular.eot?iefix") format("eot"), url("../fonts/Caveat/Caveat-Regular.ttf") format("woff"), url("../fonts/Caveat/Caveat-Regular.ttf") format("truetype"), url("../fonts/Caveat/Caveat-Regular.ttf") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Caveat';
+  src: url("../fonts/Caveat/Caveat-Bold.ttf");
+  src: url("../fonts/Caveat/Caveat-Bold.eot?iefix") format("eot"), url("../fonts/Caveat/Caveat-Bold.ttf") format("woff"), url("../fonts/Caveat/Caveat-Bold.ttf") format("truetype"), url("../fonts/Caveat/Caveat-Bold.ttf") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf");
+  src: url("../fonts/Montserrat_Alternates/MontserratAlternates-Regular.eot?iefix") format("eot"), url("../fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf") format("woff"), url("../fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf") format("truetype"), url("../fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf");
+  src: url("../fonts/Montserrat_Alternates/MontserratAlternates-Bold.eot?iefix") format("eot"), url("../fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf") format("woff"), url("../fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf") format("truetype"), url("../fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat_Alternates/MontserratAlternates-Italic.ttf");
+  src: url("../fonts/Montserrat_Alternates/MontserratAlternates-Italic.eot?iefix") format("eot"), url("../fonts/Montserrat_Alternates/MontserratAlternates-Italic.ttf") format("woff"), url("../fonts/Montserrat_Alternates/MontserratAlternates-Italic.ttf") format("truetype"), url("../fonts/Montserrat_Alternates/MontserratAlternates-Italic.ttf") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat_Alternates/MontserratAlternates-Light.ttf");
+  src: url("../fonts/Montserrat_Alternates/MontserratAlternates-Light.eot?iefix") format("eot"), url("../fonts/Montserrat_Alternates/MontserratAlternates-Light.ttf") format("woff"), url("../fonts/Montserrat_Alternates/MontserratAlternates-Light.ttf") format("truetype"), url("../fonts/Montserrat_Alternates/MontserratAlternates-Light.ttf") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+* {
+  font-family: Montserrat, Tahoma, sans-serif; }
+
+.top-menu {
+  height: 80px;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  background: #fff; }
+  .top-menu__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    width: 70%;
+    margin: 0; }
+  .top-menu__item {
+    list-style: none; }
+    .top-menu__item a {
+      font-weight: 600;
+      font-size: 18px;
+      color: #000;
+      transition: all 0.8s;
+      padding: 5px;
+      border-radius: 5px; }
+      .top-menu__item a:hover {
+        text-decoration: none;
+        background: #faf0d2;
+        transition: all 1s; }
+  .top-menu__call {
+    display: block; }
+    .top-menu__call img {
+      transform: rotate(145deg);
+      transition: all 1s; }
+      .top-menu__call img:hover {
+        transform: rotate(165deg);
+        transition: all 1s; }
+
+.logo {
+  display: block;
+  height: 100%;
+  width: 100px; }
+  .logo img {
+    width: 100%; }
+
+.top-menu__nav-wrap {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.top-banner {
+  background: url("../img/main/banner4.jpg") center no-repeat;
+  background-size: cover;
+  height: 600px; }
+  .top-banner h1 {
+    font-family: Caveat;
+    font-size: 80px;
+    font-weight: bold;
+    margin: 0; }
+  .top-banner p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 26px;
+    color: #fff; }
+
+.top-banner__cover {
+  background: rgba(0, 0, 0, 0.690196);
+  height: 100%; }
+
+body {
+  height: 2000px; }
+>>>>>>> master
