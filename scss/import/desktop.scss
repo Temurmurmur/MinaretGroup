@@ -19,7 +19,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0;
-    width: 70%;
+    width: 60%;
     margin: 0;
   }
 
@@ -27,16 +27,16 @@
     list-style: none;
 
     a {
+      @extend %border;
       font-weight: 600;
-      font-size: 18px;
+      font-size: 22px;
       color: #000;
       transition: all 0.8s;
       padding: 5px;
-      border-radius: 5px;
 
       &:hover {
         text-decoration: none;
-        background: #faf0d2;
+        background: $btn-color;
         transition: all 1s;
       }
     }
@@ -141,15 +141,13 @@
 }
 
 .btn {
+  @extend %border;
   display: inline-block;
-  background: #faf0d3;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  background: $btn-color;
   padding: 10px 20px;
   font-size: 25px;
   font-weight: 600;
-  color: #222;
+  color: $primary-color;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -158,7 +156,7 @@
   &:hover {
     transform: scale(1.02);
     transition: all 0.5s;
-    color: #222;
+    color: $primary-color;
     text-decoration: none;
   }
 }
@@ -194,33 +192,35 @@
   }
 
   &__item {
+    @extend %border;
     background: #fff;
     padding: 30px;
     color: #000;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
     height: 434px;
 
     .description {
-      text-transform: capitalize;
       line-height: 29px;
     }
   }
 
   &__label {
-    color: #222 !important;
+    color: $primary-color !important;
     text-transform: uppercase;
     font-weight: 600;
   }
 }
 
 .color-black {
-  color: #222;
+  color: $primary-color;
 }
 
 .btn-black {
-  background: #222;
+  background: $primary-color;
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+  }
 }
 
 .services__btn {
@@ -228,7 +228,7 @@
 }
 
 .arrows {
-  color: #222 !important;
+  color: $primary-color !important;
 
   svg {
     width: 20px;
@@ -288,5 +288,52 @@
   100% {
     transform: scale(0.9);
     opacity: 0.7;
+  }
+}
+
+.modal-medium {
+  width: 50%;
+}
+
+.modal__description {
+  font-size: 20px;
+}
+
+.list {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.contacts__form {
+  background: #fff;
+  color: $primary-color;
+  width: 40%;
+  margin-top: 100px;
+  padding: 60px 40px;
+}
+
+.contacts__title {
+  color: $primary-color !important;
+}
+
+.contacts__paralax {
+  min-height: 600px;
+}
+
+.contacts__link {
+  color: $primary-color !important;
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contacts__row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+
+  span {
+    margin-right: 15px;
+    padding-top: 5px;
   }
 }
