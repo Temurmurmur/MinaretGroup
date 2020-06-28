@@ -1,0 +1,170 @@
+.burger {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .contacts__form {
+    width: 60%;
+  }
+
+  .projects__info {
+    width: 41%;
+  }
+
+  .top-menu__nav {
+    width: 75%;
+  }
+
+  .indents {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .top-menu {
+    padding: 15px 30px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .top-banner p {
+    padding: 0 30px;
+  }
+
+  .projects__double {
+    flex-direction: column-reverse;
+    box-sizing: border-box;
+  }
+
+  .projects__info {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+
+  .projects__slider {
+    width: 100%;
+  }
+
+  .services__descr-wrap {
+    flex-direction: column;
+    align-items: baseline;
+
+    .description {
+      width: 100%;
+    }
+
+    .btn {
+      width: 50%;
+    }
+  }
+
+  .arrows {
+    top: 59%;
+  }
+
+  .top-menu__nav-wrap {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .logo {
+    img {
+      width: 65%;
+    }
+  }
+
+  .footer {
+    padding: 15px 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 37px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .top-menu {
+    padding: 10px 15px;
+  }
+
+  .top-banner {
+    height: 500px;
+
+    h1 {
+      font-size: 55px;
+    }
+
+    p {
+      padding: 0 15px;
+      font-size: 18px;
+    }
+  }
+
+  .projects__double {
+    margin-top: 30px;
+  }
+
+  .projects__slide-item {
+    height: 190px;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .indents {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .projects__info {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .btn {
+    font-size: 17px;
+  }
+
+  .projects {
+    margin-bottom: 30px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .services__descr-wrap .btn {
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+  }
+
+  .card-img-cover {
+    height: 220px;
+  }
+
+  .services__wrap .uk-card-default {
+    height: auto;
+  }
+
+  .arrows {
+    display: none;
+  }
+
+  .contacts__form {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 60px 15px;
+    text-align: center;
+  }
+}
