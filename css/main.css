@@ -435,6 +435,7 @@ template {
   position: relative;
   margin-top: 100px;
   display: flex;
+  align-items: center;
   justify-content: space-between; }
 
 .projects {
@@ -442,7 +443,7 @@ template {
   .projects__info {
     width: 35%;
     color: #fff;
-    padding: 35px 20px 35px 40px; }
+    padding: 80px 20px 80px 70px; }
     .projects__info p {
       font-size: 20px; }
   .projects__slider {
@@ -472,7 +473,7 @@ template {
 .projects__slide-item {
   position: relative;
   width: 100%;
-  height: 354px;
+  height: 500px;
   overflow: hidden; }
   .projects__slide-item img {
     position: absolute;
@@ -637,6 +638,59 @@ template {
   .timel:hover {
     color: #fff; }
 
+.socials {
+  display: flex; }
+
+.vk {
+  background: url("../img/ico/vk-hov.svg") left top no-repeat; }
+  .vk:hover {
+    background: url("../img/ico/vk.svg") left top no-repeat;
+    background-size: cover; }
+
+.tg {
+  background: url("../img/ico/tg-hov.svg") left top no-repeat; }
+  .tg:hover {
+    background: url("../img/ico/tg.svg") left top no-repeat;
+    background-size: cover; }
+
+.inst {
+  background: url("../img/ico/inst-hov.svg") left top no-repeat; }
+  .inst:hover {
+    background: url("../img/ico/inst.svg") left top no-repeat;
+    background-size: cover; }
+
+.socials__item {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  margin-right: 15px; }
+
+.contacts__socials {
+  margin-bottom: 20px; }
+
+.divider__height {
+  height: 600px; }
+
+.canvas-mob__title {
+  font-family: Caveat;
+  color: #fff;
+  font-size: 40px; }
+
+.mob-menu__item {
+  font-size: 20px;
+  font-family: Montserrat;
+  font-weight: 500;
+  margin-bottom: 15px; }
+
+.mob__nav {
+  list-style: none;
+  padding: 0; }
+
+.mob__socials .socials__item {
+  width: 60px;
+  height: 60px; }
+
 .burger {
   display: none; }
 
@@ -644,7 +698,8 @@ template {
   .contacts__form {
     width: 60%; }
   .projects__info {
-    width: 41%; }
+    width: 41%;
+    padding: 40px 20px 40px 30px; }
   .top-menu__nav {
     width: 75%; }
   .indents {
@@ -732,4 +787,7 @@ template {
     width: 100%;
     box-sizing: border-box;
     padding: 60px 15px;
-    text-align: center; } }
+    text-align: center; }
+  .socials__item {
+    width: 60px;
+    height: 60px; } }

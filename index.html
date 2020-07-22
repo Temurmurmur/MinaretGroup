@@ -21,22 +21,29 @@
       </a>
       <nav class="top-menu__nav-wrap">
         <ul class="top-menu__nav">
-          <li class="top-menu__item"><a href="#">Проекты</a></li>
-          <li class="top-menu__item"><a href="#">Услуги</a></li>
-          <li class="top-menu__item"><a href="#">Контакты</a></li>
+          <li class="top-menu__item"><a href="#projects" uk-scroll>Проекты</a></li>
+          <li class="top-menu__item"><a href="#services" uk-scroll>Услуги</a></li>
+          <li class="top-menu__item"><a href="#contacts" uk-scroll>Контакты</a></li>
         </ul>
         <a href="tel:+77777777777" class="top-menu__call" uk-tooltip="title: Позвони нам; pos: bottom-right"><img src="img/ico/call.png" alt=""></a>
       </nav>
-      <div class="burger" uk-toggle="target: #offcanvas-flip"><span class="uk-margin-small-right" uk-icon="icon: menu; ratio: 1.8"></span></div>
-      <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+      <div class="burger" uk-toggle="target: #offcanvasFlip"><span class="uk-margin-small-right" uk-icon="icon: menu; ratio: 1.8"></span></div>
+      <div id="offcanvasFlip" uk-offcanvas="flip: true; overlay: true">
         <div class="uk-offcanvas-bar">
 
-          <button class="uk-offcanvas-close" type="button" uk-close></button>
+          <button class="uk-offcanvas-close" type="button" uk-close id="close"></button>
 
-          <h3>Title</h3>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
+          <h3 class="canvas-mob__title">MinaretGroup</h3>
+          <ul class="mob__nav">
+            <li class="mob-menu__item"><a href="#projects" uk-scroll onclick="scrollClose()">Проекты</a></li>
+            <li class="mob-menu__item"><a href="#services" uk-scroll>Услуги</a></li>
+            <li class="mob-menu__item"><a href="#contacts" uk-scroll>Контакты</a></li>
+          </ul>
+          <div class="mob__socials socials">
+            <a href="https://vk.com/public196585601" class="socials__item vk"></a>
+            <a href="#" class="socials__item tg"></a>
+            <a href="https://www.instagram.com/minaret_group/" class="socials__item inst"></a>
+          </div>
         </div>
       </div>
     </section>
@@ -44,7 +51,7 @@
   <main>
     <article class="top-banner">
       <div class="top-banner__cover">
-        <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top" style="background-image: url('images/dark.jpg');">
+        <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top" style="background-image: url('images/dark.jpg');" id="projects">
           <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
             <h1>MinaretGroup</h1>
             <p>MinaretGroup небольшая группа из талантливых
@@ -120,8 +127,8 @@
       </div>
     </article>
 
-    <aside class="divider">
-      <div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" style="background-image: url('img/main/14.jpg');">
+    <aside class="divider" id="services">
+      <div class="uk-background-cover uk-light uk-flex divider__height" uk-parallax="bgy: -200" style="background-image: url('img/main/14.jpg');">
 
         <!-- <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">Headline</h1> -->
 
@@ -257,7 +264,7 @@
         </div>
       </section>
     </article>
-    <article class="contacts">
+    <article class="contacts" id="contacts">
       <div class="uk-height-large uk-background-cover uk-light uk-flex uk-flex-top indents contacts__paralax" uk-parallax="bgy: -200" style="background-image: url('img/main/7.jpg');">
 
         <div class="contacts__form" uk-parallax="y: 100,0">
@@ -269,6 +276,11 @@
           <div class="contacts__row">
             <span uk-icon="icon: mail; ratio: 1.2"></span>
             <a href="mailto:minaretGroup@mail.ru?subject=Заказ" class="contacts__link" target="_blank">minaretGroup@mail.ru</a>
+          </div>
+          <div class="contacts__socials socials">
+            <a href="https://vk.com/public196585601" class="socials__item vk"></a>
+            <a href="#" class="socials__item tg"></a>
+            <a href="https://www.instagram.com/minaret_group/" class="socials__item inst"></a>
           </div>
           <a href="mailto:minaretGroup@mail.ru?subject=Заказ" class="btn btn-black">Напишите нам</a>
         </div>
